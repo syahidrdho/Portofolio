@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Saya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+   header {
+  background-image: url('img/foto-header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+    footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    } 
+    /* bagian projek*/
+    .card-custom {
+    background-color: rgb(0, 0, 0);
+    color: #f6f4f4;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header>
+    <div class="container">
+      <h1 class="text-center">Muhammad Syahid Ridho</h1>
+      <p class="text-center">Web Developer |  Mahasiswa Sistem Informasi Institut Teknologi Kalimantan</p>
+    </div>
+  </header>
+
+  <!-- Tentang Saya -->
+  <section class="container my-5" id="tentang">
+  <h2 class="text-center mb-4">Tentang Saya</h2>
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center">
+      <img src="img/foto-saya.jpg" alt="Foto Saya" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+    </div>
+    <div class="col-md-8">
+      <p>
+        Saya adalah mahasiswa yang sedang belajar web development. Saya suka membangun website yang modern, responsif, dan interaktif. Saat ini saya sedang fokus belajar HTML, CSS, JavaScript, dan framework seperti Bootstrap.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projek -->
+  <section class="container my-5" id="projek">
+    <h2 class="text-center mb-4">Projek Saya</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card card-custom">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projek 1">
+          <div class="card-body">
+            <h5 class="card-title">
+  <a href="http://boisterous-dodol-920ad2.netlify.app" target="_blank" class="text-white text-decoration-none">
+    Projek Web TopUp Game
+  </a>
+</h5>
+            <p class="card-text">Web berupa layanan untuk melakukan Topup Game secara online</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card card-custom">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projek 2">
+          <div class="card-body">
+            <h5 class="card-title">Projek 2</h5>
+            <p class="card-text">Deskripsi singkat projek 2.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card card-custom">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projek 3">
+          <div class="card-body">
+            <h5 class="card-title">Projek 3</h5>
+            <p class="card-text">Deskripsi singkat projek 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="container my-5" id="kontak">
+    <h2 class="text-center mb-4">Kontak</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Alamat Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="pesan" class="form-label">Pesan</label>
+        <textarea class="form-control" id="pesan" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Portofolio M.Syahid Ridho</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
