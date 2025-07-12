@@ -1,129 +1,157 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portofolio Saya</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      scroll-behavior: smooth;
-    }
-   header {
-  background-image: url('img/foto-header.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 80px 0;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-}
 
-    footer {
-      background-color: #f8f9fa;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-    } 
-    /* bagian projek*/
-    .card-custom {
-    background-color: rgb(0, 0, 0);
-    color: #f6f4f4;
-    border: 2px solid rgb(255, 255, 255);
-  }
-  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main>
+    <!-- Navbar Hijau -->
+    <nav class="navbar navbar-expand-lg bg-success py-3">
+      <div class="container d-flex flex-wrap justify-content-center gap-3">
+        <div class="nav-box text-white text-center px-4 py-2 rounded" onclick="showSection('home')">
+          <h5 class="mb-0">Home</h5>
+        </div>
+        <div class="nav-box text-white text-center px-4 py-2 rounded" onclick="showSection('projects')">
+          <h5 class="mb-0">My Projects</h5>
+        </div>
+        <div class="nav-box text-white text-center px-4 py-2 rounded" onclick="showSection('contact')">
+          <h5 class="mb-0">My Contacts</h5>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Header/Navbar -->
-  <header>
-    <div class="container">
-      <h1 class="text-center">Muhammad Syahid Ridho</h1>
-      <p class="text-center">Web Developer |  Mahasiswa Sistem Informasi Institut Teknologi Kalimantan</p>
-    </div>
-  </header>
+    <!-- Home Section -->
+    <section id="home" class="active container py-5">
+      <div class="row align-items-center">
+        <!-- Kolom Foto -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="img/foto-saya.jpg" alt="Foto Gurdoza" class="img-fluid rounded-circle shadow animate-photo" width="400" />
+        </div>
+        <!-- Kolom Teks -->
+        <div class="col-md-7">
+            <div class="home-text-box border border-success rounded-4 p-4 shadow-sm">
+            <h1 class="mb-3 animate-text">Halo, Saya Muhammad Syahid Ridho</h1>
+            <p class="lead animate-text">
+             Saya seorang Mahasiswa Sistem Informasi dari Institut Teknologi Kalimantan dengan minat besar di bidang teknologi, khususnya web development dan desain antarmuka.
+            Saya senang belajar hal baru dan terus mengembangkan keterampilan saya di dunia digital.
+            </p>
+        </div>
+</div>
 
-  <!-- Tentang Saya -->
-  <section class="container my-5" id="tentang">
-  <h2 class="text-center mb-4">Tentang Saya</h2>
-  <div class="row align-items-center">
-    <div class="col-md-4 text-center">
-      <img src="img/foto-saya.jpg" alt="Foto Saya" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
-    </div>
-    <div class="col-md-8">
-      <p>
-        Saya adalah mahasiswa yang sedang belajar web development. Saya suka membangun website yang modern, responsif, dan interaktif. Saat ini saya sedang fokus belajar HTML, CSS, JavaScript, dan framework seperti Bootstrap.
-      </p>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="py-5 d-none">
+      <div class="container">
+        <h2 class="text-center mb-5 animate-text">My Projects</h2>
+        <div class="d-flex justify-content-center flex-wrap gap-4">
+          <!-- Proyek 1 -->
+          <div class="card project-card border border-success shadow-sm animate-project" style="max-width: 100%; width: 1000px;">
+            <img src="topup.jpg" class="card-img-top" alt="Top-Up Game" />
+            <div class="card-body">
+              <h5 class="card-title">Website Top-Up Game</h5>
+              <p class="card-text">Website top-up Diamond ML dan FF menggunakan HTML, CSS, dan PHP.</p>
+              <a href="#" class="btn btn-project btn-sm">Lihat Proyek</a>
+            </div>
+          </div>
+
+          <!-- Proyek 2 -->
+         <div class="card project-card border border-success shadow-sm animate-project" style="max-width: 100%; width: 1000px;">
+            <img src="booking.jpg" class="card-img-top" alt="Sistem Booking" />
+            <div class="card-body">
+              <h5 class="card-title">Sistem Booking Ruangan</h5>
+              <p class="card-text">Aplikasi pemesanan ruang kelas berbasis web dengan MySQL & PHP.</p>
+              <a href="#" class="btn btn-project btn-sm">Lihat Proyek</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="bg-white py-5 mb-5 d-none">
+  <div class="container">
+    <h2 class="text-center mb-5 animate-text">My Contacts</h2>
+    <div class="row text-center g-4">
+      
+      <!-- Email -->
+      <div class="col-md-4">
+        <div class="contact-box border border-success rounded-4 p-4 shadow-sm h-100">
+          <i class="bi bi-envelope-fill contact-icon"></i>
+          <h5 class="mt-3">Email</h5>
+          <p>muhammadsyahidridho27@gmail.com</p>
+          <a href="muhammadsyahidridho27@gmail.com" class="btn btn-project btn-sm mt-2">
+            <i class="bi bi-envelope me-1"></i> Hubungi Saya
+          </a>
+        </div>
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="col-md-4">
+        <div class="contact-box border border-success rounded-4 p-4 shadow-sm h-100">
+          <i class="bi bi-whatsapp contact-icon"></i>
+          <h5 class="mt-3">WhatsApp</h5>
+          <p>+62 812-3456-7890</p>
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-project btn-sm mt-2">
+            <i class="bi bi-whatsapp me-1"></i> Hubungi Saya
+          </a>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="col-md-4">
+        <div class="contact-box border border-success rounded-4 p-4 shadow-sm h-100">
+          <i class="bi bi-instagram contact-icon"></i>
+          <h5 class="mt-3">Instagram</h5>
+          <p>@syahidrdho</p>
+          <a href="https://www.instagram.com/syahidrdho" target="_blank" class="btn btn-project btn-sm mt-2">
+            <i class="bi bi-instagram me-1"></i> Hubungi Saya
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-
-  <!-- Projek -->
-  <section class="container my-5" id="projek">
-    <h2 class="text-center mb-4">Projek Saya</h2>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card card-custom">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projek 1">
-          <div class="card-body">
-            <h5 class="card-title">
-  <a href="http://boisterous-dodol-920ad2.netlify.app" target="_blank" class="text-white text-decoration-none">
-    Projek Web TopUp Game
-  </a>
-</h5>
-            <p class="card-text">Web berupa layanan untuk melakukan Topup Game secara online</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card card-custom">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projek 2">
-          <div class="card-body">
-            <h5 class="card-title">Projek 2</h5>
-            <p class="card-text">Deskripsi singkat projek 2.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card card-custom">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projek 3">
-          <div class="card-body">
-            <h5 class="card-title">Projek 3</h5>
-            <p class="card-text">Deskripsi singkat projek 3.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Kontak -->
-  <section class="container my-5" id="kontak">
-    <h2 class="text-center mb-4">Kontak</h2>
-    <form class="mx-auto" style="max-width: 600px;">
-      <div class="mb-3">
-        <label for="nama" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="nama" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Alamat Email</label>
-        <input type="email" class="form-control" id="email" required>
-      </div>
-      <div class="mb-3">
-        <label for="pesan" class="form-label">Pesan</label>
-        <textarea class="form-control" id="pesan" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Kirim</button>
-    </form>
-  </section>
-
   <!-- Footer -->
-  <footer>
+  <footer class="bg-success text-white text-center py-4 mt-auto">
     <div class="container">
-      <p>Portofolio M.Syahid Ridho</p>
+      <p class="mb-1"><strong>Muhammad Syahid Ridho</strong> | Portofolio.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://www.instagram.com/syahidrdho" class="text-white text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a>
+        <a href="muhammadsyahidridho27@gmail.com" class="text-white text-decoration-none"><i class="bi bi-envelope"></i> Email</a>
+      </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript Interaktif -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => {
+        section.classList.add("d-none");
+      });
+      document.getElementById(id).classList.remove("d-none");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      showSection("home");
+    });
+  </script>
 </body>
 </html>
-
